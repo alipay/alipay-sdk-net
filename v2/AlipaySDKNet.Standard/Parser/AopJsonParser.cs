@@ -269,7 +269,7 @@ namespace Aop.Api.Parser
         private static string GetSign(string body)
         {
             IDictionary json = JsonConvert.DeserializeObject<IDictionary>(body);
-            Console.WriteLine(json);
+            // Console.WriteLine(json);
             return (string)json["sign"];
         }
 
